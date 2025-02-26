@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Nubi Wellness Center</title>
@@ -17,7 +18,7 @@
             <a href="#Services">Services</a>
             <a href="#Doctors">Doctors</a>
             <a href="#Book">Book</a>
-            <a href="#Review">Review</a>
+            <a href="#Reviews">Reviews</a>
             <a href="#Blogs">Blogs</a>
         </nav>
         <div id="MenuBtn" class="fas fa-bars"></div>
@@ -27,48 +28,17 @@
     <section class="home" id="Home">
 
         <div class="content">
-            <h3>Mental health service</h3>
+            <h3>COMPREHENSIVE <br /> RESIDENTIAL TREATMENT <br /> FOR MENTAL HEALTH</h3>
             <p>A safe space to start your journey to mental wellness with a team of experts</p>
             <a href="#" class="btn">Contact us <span class="fas fa-chevron-right"></span></a>
-        </div>
-        <div class="slider">
-            <div class="images">
-                <input type="radio" name="slide" id="img1" checked>
-                <input type="radio" name="slide" id="img2">
-                <input type="radio" name="slide" id="img3">
-                <input type="radio" name="slide" id="img4">
-                <input type="radio" name="slide" id="img5">
-                <input type="radio" name="slide" id="img6">
-                <input type="radio" name="slide" id="img7">
-                <input type="radio" name="slide" id="img8">
-
-                <img src="img/1.jpg" class="m1" alt="img1">
-                <img src="img/2.jpg" class="m2" alt="img2">
-                <img src="img/3.jpg" class="m3" alt="img3">
-                <img src="img/4.jpg" class="m4" alt="img4">
-                <img src="img/5.jpg" class="m5" alt="img5">
-                <img src="img/6.jpg" class="m6" alt="img6">
-                <img src="img/7.jpg" class="m7" alt="img7">
-                <img src="img/8.jpg" class="m8" alt="img8">
-            </div>
-            <div class="dots">
-                <label for="img1"></label>
-                <label for="img2"></label>
-                <label for="img3"></label>
-                <label for="img4"></label>
-                <label for="img5"></label>
-                <label for="img6"></label>
-                <label for="img7"></label>
-                <label for="img8"></label>
-            </div>
         </div>
     </section>
 
     <!-- About us Section Start -->
     <section class="about" id="About">
         <h1 class="heading"><span>About</span> Us</h1>
-        <div class="row">
-            <div class="content">
+        <div class="content">
+            <div class="write-up">
                 <h3>Your path to mental wellness</h3>
                 <p>nubi wellness center was born from a lack of quality services in the area of mental health which has been neglected for so long. that is why we strive to improve the quality of care available to those in need of mental health care</p>
                 <p>our team of experts are ready to provide competent, effective, reliable and timely mental health care to nigerians who are seeking treatment. we seek to make our patients experience with us second to none.</p>
@@ -76,9 +46,26 @@
                 <p>safety and comfort whilst having healthy and tasty meals from our in-house chef is guaranteed.</p>
                 <a href="#" class="btn">Read More<span class="fas fa-chevron-right"></span></a>
             </div>
-            <div class="img">
+            <!-- <div class="img">
                 <img src="img/about.png" height="500px" alt="">
+            </div> -->
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="img/1.jpg" class="slide" alt="">
+                    <img src="img/2.jpg" class="slide" alt="">
+                    <img src="img/3.jpg" class="slide" alt="">
+                    <img src="img/4.jpg" class="slide" alt="">
+                    <img src="img/5.jpg" class="slide" alt="">
+                    <img src="img/6.jpg" class="slide" alt="">
+                    <img src="img/7.jpg" class="slide" alt="">
+                    <img src="img/8.jpg" class="slide" alt="">
+
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
+        </div>
         </div>
     </section>
 
@@ -86,13 +73,8 @@
     <section class="IconContainer">
         <div class="icons">
             <i class="fas fa-user"></i>
-            <h3>749+</h3>
+            <h3>275+</h3>
             <p>Satisfied Patients</p>
-        </div>
-        <div class="icons">
-            <i class="fas fa-hospital"></i>
-            <h3>17+</h3>
-            <p>Available Hospital</p>
         </div>
         <div class="icons">
             <i class="fas fa-user-md"></i>
@@ -111,82 +93,31 @@
         <h1 class="heading">Our <span>Services</span></h1>
         <p>we offer world-class services in the area of mental health care and management. our team of experts are ready to provide competent, effective, reliable and timely mental health care to nigerians who are seeking treatment.</p>
         <div class="boxContainer">
-            <div class="box">
-                <h3>Juvenile Psychiatry</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero non ipsam aut?</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            <div >
+                <ul>
+                <li>Juvenile Psychiatry</li>
+                <li>women abuse</li>
+                <li>drug abuse</li>
+                <li>rehabilitation</li>
+                <li>stress disorder</li>
+                <li>psychotic condition</li>
+                <li>bipolar disorder</li>
+                <li>drug rehabilitation center</li>
+            </ul>
             </div>
-            <div class="box">
-                <h3>women abuse</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos molestiae eos autem?</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>drug abuse</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed necessitatibus eos nesciunt!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>rehabilitation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta iste earum.</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>stress disorder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab fuga veniam!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>psychotic condition</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>bipolar disorder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>drug rehabilitation center</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>marital therapy</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>dementia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>mental health resource and library</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>cognitive behavioral therapy</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>post traumatic stress disorder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>schizophrenia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box">
-                <h3>neuro developmental disorder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse. Expedita, tempora!</p>
-                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            <div>
+                <ul>
+                <li>marital therapy</li>
+                <li>dementia</li>
+                <li>mental health resource and library</li>
+                <li>cognitive behavioral therapy</li>
+                <li>post traumatic stress disorder</li>
+                <li>schizophrenia</li>
+                <li>neuro developmental disorder</li>
+                </ul>
             </div>
         </div>
+        <a href="#" class="btn">Read More<span class="fas fa-chevron-right"></span></a>
     </section>
 
     <!-- Doctors Section Start -->
@@ -239,6 +170,7 @@
                 <input type="text" required placeholder="Your Name" class="box">
                 <input type="email" required placeholder="Your Email Address" class="box">
                 <input type="number" required placeholder="Your Telephone Number" class="box">
+                <textarea placeholder="your message..." required class="box"></textarea>
                 <!-- <input type="date" required class="box"> -->
                 <button class="btn">Submit <span class="fas fa-chevron-right"></span></button>
             </form>
@@ -246,41 +178,40 @@
     </section>
 
     <!-- Review Section Start -->
-    <section class="review" id="Review">
-        <h1 class="heading">Clients <span>Reviews</span></h1>
-        <div class="boxContainer">
+    <section class="review" id="Reviews">
+        <h1 class="heading">Reviews</h1>
+        <p class="standalone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Est accusantium inventore laudantium veniam voluptate quae rerum <br> porro ratione dolore commodi, voluptatem reprehenderit, vel accusamus.</p>
+        <div class="testimonial-track">
             <div class="box">
-                <img src="img/doc-2.jpg" alt="">
-                <h3>Panucci Juggernaut</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
             </div>
             <div class="box">
-                <img src="img/doc-2.jpg" alt="">
-                <h3>Panucci Juggernaut</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet vitae consequatur beatae unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
             </div>
             <div class="box">
-                <img src="img/doc-2.jpg" alt="">
-                <h3>Panucci Juggernaut</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni amet cupiditate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+                <!-- duplicate -->
+           <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, saepe.</p>
             </div>
         </div>
     </section>
@@ -335,24 +266,30 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-         <div class="contact">
-            <h1>Contact us</h1>
-            <h2><i class="fa fa-location-arrow" aria-hidden="true"></i> 31 Ayinde Giwa street, Surulere
-                Lagos Nigeria.</h2>
-            <h2><i class="fa fa-envelope" aria-hidden="true"></i> info@nubiwellnesscenter.com</h2>
-            <h2><i class="fa fa-phone" aria-hidden="true"></i> 0907 099 0088</h2>
-
-         </div>
-         <div class="middle">
-            <h1 id="">&copy; Nubi Wellness Center 2025</h1>
-         </div>
-         <div class="socials">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
+   <footer class="footer">
+        <div class="get-in-touch">
+        <h3>Get in touch</h3> 
+        <p>info@nubiwellnesscenter.com</p>
+        <p>+2349070990088</p>
+        <p>+2347054109566</p>
         </div>
-    </footer>
+        <div class="connect">
+            <h3>Connect</h3>
+            <a href="">linkedin</a>
+            <a href="">Instagram</a>
+            <a href="">facebook</a>
+        </div>
+        <div class="navigation">
+            <h3>navigation</h3>
+            <a href="">Home</a>
+            <a href="">Book</a>
+        </div>
+        <div class="location">
+            <h3>Location</h3>
+            <p>31, Ayinde Giwa, Surulere, Lagos Nigeria.</p>
+        </div>
+        <p class="copywright">&copy; copyright nubiwellnesscenter 2025</p>
+   </footer>
     <script src="script.js"></script>
 </body>
 </html>
