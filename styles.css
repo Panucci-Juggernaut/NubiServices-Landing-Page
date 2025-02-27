@@ -586,4 +586,12 @@ body > footer > p.copyright{
   .services .boxContainer {
     display: block;
   }
+  .book h3 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .home .contenti p {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
 }
