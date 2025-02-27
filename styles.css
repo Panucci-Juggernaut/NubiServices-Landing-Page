@@ -14,7 +14,7 @@
   border: none;
   transition: 0.2s all linear;
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 *::selection {
   background: var(--main);
@@ -60,7 +60,7 @@ section {
 .heading {
   text-align: center;
   font-size: 4rem;
-  letter-spacing: 0rem;
+  /* letter-spacing: 0rem; */
   font-style: italic;
 }
 .heading span {
@@ -69,7 +69,7 @@ section {
 
 /* Header/Navbar Start */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -91,6 +91,9 @@ section {
 }
 .header .navbar a:hover {
   color: var(--main);
+  background-color: var(--secondary);
+  padding: 5px;
+  border-radius: 4px;
 }
 #MenuBtn {
   background: #eee;
@@ -109,42 +112,40 @@ section {
   padding-top: 25rem;
   background: url(img/background.jpg) no-repeat center 100%;
 }
-.home .content h3 {
+.home .contenti h3 {
   font-size: 2.5rem;
   color: #fff;
   line-height: 1.2;
 }
-.home .content p {
-  font-size: 1.7rem;
+.home .contenti p {
+  font-size: 1.8rem;
   color: #fff;
   padding: 1rem 0;
 }
 
 /* About us Section Start */
-/* .about{
-  padding: 1rem 0;
-} */
 .about .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  gap: 20px;
 }
 .write-up {
   width: 45%;
   color: #333;
 }
 .write-up h3 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   font-weight: bolder;
 }
 .write-up p {
 
   color: #333;
-  font-size: 1.4rem;
-  line-height: 1.8;
+  font-size: 1.7rem;
+  line-height: 1.5;
   text-align: justify;
 }
 .slider-container {
@@ -162,7 +163,7 @@ section {
 .slide {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 .prev, .next {
   position: absolute;
@@ -185,7 +186,6 @@ section {
 .prev:hover, .next:hover {
   background-color:var(--secondary);
   color: var(--main);
-
 }
 
 /* Icon Section Start */
@@ -226,19 +226,20 @@ section {
 /* Services Section Start */
 .services p {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   text-align: justify;
 }
 .services .boxContainer {
   display: grid;
   grid-template-columns: repeat(2,  1fr);
-  gap: 2rem;
+  /* gap: 2rem; */
 }
  .boxContainer li{
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
+  list-style: square inside;
  }
 
 /* Doctors Section Start */
@@ -247,14 +248,14 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
-.doctors .boxContainer .box {
+.doctors .box {
   border-radius: 0.5rem;
   text-align: center;
   border: 0.2rem solid var(--main);
   box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.7);
   padding: 2rem;
 }
-.doctors .boxContainer .box:hover {
+.doctors .box:hover {
   transform: scale(1.03);
 }
 .doctors img {
@@ -276,10 +277,10 @@ section {
   color: var(--main);
   font-size: 1.5rem;
 }
-.doctors .boxContainer .box .icons {
+.doctors .icons {
   padding-top: 2rem;
 }
-.doctors .boxContainer .box .icons i {
+.doctors i {
   font-size: 2rem;
   line-height: 4.5rem;
   height: 5rem;
@@ -302,24 +303,24 @@ section {
   gap: 2rem;
   align-items: center;
 }
-.book .row .img {
+.book .img {
   flex: 1 1 25rem;
 }
-.book .row .img img {
+.book img {
   width: 100%;
 }
-.book .row form {
+.book form {
   flex: 1 1 25rem;
   border: 0.5rem solid var(--main);
   padding: 2rem;
   text-align: center;
   border-radius: 0.5rem;
 }
-.book form h3 {
+.book h3 {
   font-size: 3rem;
   padding-bottom: 1rem;
 }
-.book form .box {
+.book .box {
   width: 100%;
   display: block;
   margin: 0.7rem 0;
@@ -335,7 +336,7 @@ section {
 .review{
   width: 100%;
   overflow: hidden;
-  background-color: #071d4c;
+  background-color: var(--secondary);
   position: relative;
   padding:5rem 9%;
   color: #333;
@@ -343,10 +344,13 @@ section {
 .review h1{
   color: #fff;
 }
-.review > p{
+.review p {
   font-size: 1.6rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
   line-height: 1.5;
+} 
+.review > p{
+  padding-bottom: 2rem;
   text-align: center;
 }
 .review .standalone{
@@ -370,61 +374,56 @@ section {
   from{transform: translateX(0);}
   to{transform: translateX(-50%);}
 }
-.review .box p {
-  font-size: 1.6rem;
-  padding-top: 4rem;
-  line-height: 1.5;
-} 
 /* Blog Section Start */
 .blogs .boxContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
-.blogs .boxContainer .box {
+.blogs .box {
   border: 0.2rem solid var(--main);
   box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.7);
   border-radius: 0.5rem;
   padding: 2rem;
 }
-.blogs .boxContainer .box .image {
+.blogs .image {
   height: 20rem;
   overflow: hidden;
   border-radius: 0.5rem;
 }
-.blogs .boxContainer .box .image img {
+.blogs img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.blogs .boxContainer .box:hover .image img {
+.blogs .box:hover .image img {
   transform: scale(1.2);
 }
-.blogs .boxContainer .box .content {
+.blogs .content {
   padding-top: 1rem;
 }
-.blogs .boxContainer .box .content .icon {
+.blogs .icon {
   padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.blogs .boxContainer .box .content .icon a {
+.blogs a {
   font-size: 1.4rem;
   color: #333;
 }
-.blogs .boxContainer .box .content .icon a:hover {
+.blogs a:hover {
   color: var(--main);
 }
-.blogs .boxContainer .box .content .icon a i {
+.blogs i {
   padding-right: 0.5rem;
   color: var(--main);
 }
-.blogs .boxContainer .box .content h3 {
+.blogs h3 {
   color: #000;
   font-size: 3rem;
 }
-.blogs .boxContainer .box .content p {
+.blogs p {
   color: #333;
   font-size: 1.5rem;
   line-height: 1.8;
@@ -441,29 +440,29 @@ body > footer{
   background-color: var(--secondary);
 }
 body > footer > div.get-in-touch{
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 body > footer > div.connect{
-  grid-column: 4/5;
+  grid-column: 5/7;
 }
 body > footer > div.navigation{
-  grid-column: 6/7;
-}
-body > footer > div.location{
   grid-column: 8/10;
 }
-body > footer > p.copywright{
+body > footer > div.location{
+  grid-column:10/13;
+}
+body > footer > p.copyright{
   grid-column: 1/13;
   grid-row: 2/3;
   text-align: center;
 }
 .footer h3{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.4);
 }
 .footer p{
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 .footer a{
   color: #fff;
@@ -475,6 +474,9 @@ body > footer > p.copywright{
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  .home {
+    padding-top: 40rem;
   }
   .home .content h3 {
     font-size: 3rem;
@@ -488,6 +490,9 @@ body > footer > p.copywright{
   .header .navbar a {
     margin-left: 1rem;
     font-size: 1.7rem;
+  }
+  .about .content {
+    gap: 20px;
   }
   .content {
     flex-direction: column;
@@ -531,6 +536,33 @@ body > footer > p.copywright{
   .book .img {
     display: none;
   }
+  body > footer{
+    padding: 1rem 5%;
+  }
+  body > footer > div.get-in-touch{
+    grid-column: 1/13;
+    text-align: center;
+  }
+  body > footer > div.connect{
+    grid-column: 4/6;
+    grid-row: 2;
+    text-align: center;
+  }
+  body > footer > div.navigation{
+    grid-column: 8/10;
+    grid-row: 2;
+    text-align: center;
+  }
+  body > footer > div.location{
+    grid-column:1/13;
+    grid-row: 3;
+    text-align: center;
+  }
+  body > footer > p.copyright{
+    grid-column: 1/13;
+    grid-row: 4;
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -544,8 +576,14 @@ body > footer > p.copywright{
   .about h3{
     font-size: 2.5rem;
   }
+  .slider {
+    height: 300px;
+  }
   .slide {
     width: 100%;
     height: 100%; 
+  }
+  .services .boxContainer {
+    display: block;
   }
 }
